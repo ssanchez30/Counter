@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Counter Exercise</title>
+</head>
+
+<body>
+
+    <div class="container text-center">
+        <div>
+            <h1 class="mt-5">Counter</h1>
+        </div>
+
+        
+            <div>
+                <h2><span id="nTimes">{{session['contador']}}</span><span id="tTimes" name="tTimes"> {{texto}}</span></h2>
+            </div>
+            <div><button class="btn btn-success mt-2 mx-2 increaseByTwo">Add two visits!</button><button
+                    class="btn btn-danger mt-2 mx-2 btnReset">Reset</button></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='./js/script.js') }}"></script>
+</body>
+
+</html>
